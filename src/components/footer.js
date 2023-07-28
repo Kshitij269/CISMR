@@ -17,13 +17,13 @@ function Footer(){
                   <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Gallery</h2>
                   <ul className="text-gray-500 dark:text-gray-400 font-medium">
                       <li className="mb-4">
-                          <a href="https://flowbite.com/" className="hover:underline">Workshops</a>
+                          <a href="/workshop" className="hover:underline">Workshops</a>
                       </li>
                       <li className="mb-4">
-                          <a href="https://tailwindcss.com/" className="hover:underline">Conference</a>
+                          <a href="/confer" className="hover:underline">Conference</a>
                       </li>
                       <li>
-                          <a href="https://tailwinss.com/" className="hover:underline">CISMR Lab</a>
+                          <a href="/lab" className="hover:underline">CISMR Lab</a>
                       </li>
                   </ul>
               </div>
@@ -41,7 +41,7 @@ function Footer(){
       </div>
       <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
       <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" className="hover:underline">Made with Love by Kshitij Singh</a>. All Rights Reserved.
+          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 Made with Love by Kshitij Singh. All Rights Reserved.
           </span>
           <div className="flex mt-4 space-x-5 sm:justify-center sm:mt-0">
               <a href="/#" className="text-gray-500 hover:text-gray-900 dark:hover:text-white">

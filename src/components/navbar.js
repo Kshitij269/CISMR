@@ -8,7 +8,6 @@ import {
  
 export default function Nav() {
   const [openNav, setOpenNav] = React.useState(false);
- 
   React.useEffect(() => {
     window.addEventListener(
       "resize",
@@ -18,75 +17,26 @@ export default function Nav() {
  
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 text-lg font-normal"
-      >
-        <a href="/#" className="flex items-center">
-          Home
-        </a>
+      <Typography as="li" variant="small" color="blue-gray" className="p-1 text-lg font-normal">
+        <a href="/#" className="flex items-center">Home</a>
       </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 text-lg font-normal"
-      >
-        <a href="/about" className="flex items-center hover:-translate-y-1 hover:underline">
-          About CISMR Lab
-        </a>
+      <Typography as="li" variant="small" color="blue-gray"className="p-1 text-lg font-normal">
+        <a href="/about" className="flex items-center hover:-translate-y-1 hover:underline">About CISMR Lab</a>
       </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 text-lg font-normal"
-      >
-        <a href="/team" className="flex items-center hover:-translate-y-1 hover:underline">
-          Team
-        </a>
+      <Typography as="li" variant="small" color="blue-gray"className="p-1 text-lg font-normal">
+         <a href="/team" className="flex items-center hover:-translate-y-1 hover:underline"> Team </a>
       </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 text-lg font-normal"
-      >
-        <a href="/projects" className="flex items-center hover:-translate-y-1 hover:underline">
-          Projects
-        </a>
+      <Typography as="li" variant="small" color="blue-gray"className="p-1 text-lg font-normal">
+        <a href="/projects" className="flex items-center hover:-translate-y-1 hover:underline"> Projects </a>
       </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 text-lg font-normal"
-      >
-        <a href="/public" className="flex items-center hover:-translate-y-1 hover:underline">
-          Publications
-        </a>
+      <Typography as="li" variant="small" color="blue-gray"className="p-1 text-lg font-normal">
+        <a href="/public" className="flex items-center hover:-translate-y-1 hover:underline"> Publications</a>
       </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 text-lg font-normal"
-      >
-        <a href="/collab" className="flex items-center hover:-translate-y-1 hover:underline">
-          Collaborators
-        </a>
+      <Typography as="li" variant="small" color="blue-gray"className="p-1 text-lg font-normal">
+        <a href="/collab" className="flex items-center hover:-translate-y-1 hover:underline">Collaborators</a>
       </Typography>
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 text-lg font-normal"
-      >
-        <a href="/cont" className="flex items-center hover:-translate-y-1 hover:underline">
-          Contact Us
-        </a>
+      <Typography as="li" variant="small" color="blue-gray"className="p-1 text-lg font-normal">
+        <a href="/cont" className="flex items-center hover:-translate-y-1 hover:underline"> Contact Us</a>
       </Typography>
     </ul>
   );
@@ -95,13 +45,7 @@ export default function Nav() {
     <>
       <Navbar className="sticky rounded-none bg-blue-800 top z-10 h-max max-w-full py-2 px-4 lg:px-8 lg:py-4">
         <div className="flex items-center justify-between text-blue-gray-900">
-          <Typography
-            as="a"
-            href="#"
-            className="mr-4 text-3xl cursor-pointer py-1.5 font-medium"
-          >
-            CISMR
-          </Typography>
+          <Typography as="a" href="#" className="mr-4 text-3xl cursor-pointer py-1.5 font-medium" >  CISMR </Typography>
           <div className="flex items-center gap-4">
             <div className="mr-4 hidden lg:block">{navList}</div>
             <IconButton

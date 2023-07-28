@@ -5,12 +5,14 @@ import Caro from '../components/caro';
 import Data from '../components/data';
 import List from '../components/list'
 import Footer from '../components/footer'
+import homeData from '../components/homedata';
+
 function Home () {
   return (
     <>
     <Header/>
     <Nav/>
-    <Caro/> 
+    <Caro data_list={homeData}/> 
     <Data/>
     <List/>
     <Footer/>

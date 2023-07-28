@@ -3,7 +3,7 @@ import img from "../assets/NIT-Delhi_Logo.png"
 function DataAbout () {
   return (
     <>
-    <div>
+    <div><br/>
         <div className='bg-blue-200 mx-8 text-3xl flex justify-center font-bold border-2 border-black'>About CSIMR Lab</div>
         <div className='flex flex-wrap justify-around bg-blue-200 mx-8 mb-5 border-2 border-black'>
         <div className='pt-5 pl-10'>
