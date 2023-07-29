@@ -32,7 +32,6 @@ function ContactData ()
           <div className='flex justify-center bg-blue-200 pb-8 mx-8 mb-5 '>
    
 
-              
               <div>
                 <img src={img} alt="RAMAN Lab" className="flex h-auto w-auto max-h-80 max-w-80"></img>
               </div>

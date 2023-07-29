@@ -1,18 +1,13 @@
 import React from "react";
-import {
-  Navbar,
-  MobileNav,
-  Typography,
-  IconButton,
-} from "@material-tailwind/react";
- 
-export default function Nav() {
+import {Navbar,MobileNav,Typography,IconButton,} from "@material-tailwind/react";
+import { CollapseProps } from "@material-tailwind/react";
+
+export default function Nav() { 
+   
   const [openNav, setOpenNav] = React.useState(false);
+  console.log(openNav);
   React.useEffect(() => {
-    window.addEventListener(
-      "resize",
-      () => window.innerWidth >= 960 && setOpenNav(false)
-    );
+    window.addEventListener("resize",() => window.innerWidth >= 960 && setOpenNav(false));
   }, []);
  
   const navList = (
@@ -38,14 +33,13 @@ export default function Nav() {
       <Typography as="li" variant="small" color="blue-gray"className="p-1 text-lg font-normal">
         <a href="/cont" className="flex items-center hover:-translate-y-1 hover:underline"> Contact Us</a>
       </Typography>
-    </ul>
-  );
+    </ul> );
  
   return (
     <>
       <Navbar className="sticky rounded-none bg-blue-800 top z-10 h-max max-w-full py-2 px-4 lg:px-8 lg:py-4">
         <div className="flex items-center justify-between text-blue-gray-900">
-          <Typography as="a" href="#" className="mr-4 text-3xl cursor-pointer py-1.5 font-medium" >  CISMR </Typography>
+          <Typography as="a" href="#" className="mr-4 text-3xl cursor-pointer py-1.5 font-medium" >CISMR</Typography>
           <div className="flex items-center gap-4">
             <div className="mr-4 hidden lg:block">{navList}</div>
             <IconButton
@@ -55,33 +49,12 @@ export default function Nav() {
               onClick={() => setOpenNav(!openNav)}
             >
               {openNav ? (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  className="h-6 w-6"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                  />
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="h-6 w-6" stroke="currentColor" viewBox="0 0 24 24"  strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12"/>
                 </svg>
               ) : (
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  className="h-6 w-6"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth={2}
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M4 6h16M4 12h16M4 18h16"
-                  />
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" className="h-6 w-6" stroke="currentColor" strokeWidth={2}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               )}
             </IconButton>
@@ -89,7 +62,7 @@ export default function Nav() {
         </div>
         <MobileNav open={openNav}>
           {navList}
-        </MobileNav>
+        </MobileNav> 
       </Navbar>
     </>
   );
