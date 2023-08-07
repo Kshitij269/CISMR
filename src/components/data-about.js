@@ -1,5 +1,6 @@
 import React from 'react'
-import img from "../assets/NIT-Delhi_Logo.png"
+import img1 from "../assets/final.png"
+import img2 from "../assets/NIT-Delhi_Logo.png"
 function DataAbout () {
   return (
     <>
@@ -7,7 +8,7 @@ function DataAbout () {
         <div className='bg-blue-200 mx-8 text-3xl flex justify-center font-bold border-2 border-black'>About CSIMR Lab</div>
         <div className='flex flex-wrap justify-around bg-blue-200 mx-8 mb-5 border-2 border-black'>
         <div className='pt-5 pl-10'>
-            <img src={img} alt = "CISMR Lab" className="flex h-auto w-auto max-h-40 max-w-40"></img>
+            <img src={img1} alt = "CISMR Lab" className="flex h-auto w-auto max-h-40 max-w-40"></img>
         </div>
         <span className='pt-5 text-xl flex pb-10 px-4'>Computational Intelligence and Smart Motion Robotics Lab (CISMR) established in June 2020 focuses on application of Computational Intelligent techniques in various interdisciplinary research areas includes Control & Robotics, application of Machine Learning techniques in various interdisciplinary research areas includes Motion analysis, Bioinformatics and Computer Vision.
 
@@ -20,7 +21,7 @@ function DataAbout () {
     <div className='bg-blue-200 mx-8 text-3xl flex justify-center font-bold border-2 border-black'>About NIT Delhi</div>
         <div className='flex flex-wrap justify-around bg-blue-200 mx-8 mb-5 border-2 border-black'>
         <div className='pt-5 pl-10'>
-            <img src={img} alt = "NIT DELHI" className="flex h-auto w-auto max-h-40 max-w-40"></img>
+            <img src={img2} alt = "NIT DELHI" className="flex h-auto w-auto max-h-40 max-w-40"></img>
         </div>
         <span className='pt-5 text-xl flex pb-10 px-4'>National Institute of Technology Delhi (NITD) is one of the thirty one NIT (s) established in the year 2010 by an act of parliament and has been declared as an Institute of National importance.
 NIT Delhi is an autonomous Institute which functions under the aegis of Ministry of Education, Government of India. It aims to provide instructions and research facilities in various disciplines of Engineering, Science and Technology, Management, Social Sciences and Humanities for advance learning and dissemination of knowledge.
